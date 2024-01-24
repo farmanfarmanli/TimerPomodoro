@@ -92,7 +92,18 @@ body {
   }
   .input-wrapper {
     margin: 1.5rem;
+    display: flex;
   }
+
+  .input-wrapper .input-div {
+    display: flex;
+    flex-direction: column;
+  } 
+
+  .input-wrapper .input-div label {
+    margin-bottom: 10px;
+  }
+
   .input-wrapper input {
     height: 30px;
     width: 30px;

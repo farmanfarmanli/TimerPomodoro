@@ -3,7 +3,7 @@ import Button from './Button'
 import { SettingsContext } from '../context/SettingsContext'
 
 const SetPomodoro = ({ }) => {
-    const {updateExecute} = useContext(SettingsContext)
+    const { updateExecute } = useContext(SettingsContext)
     const [newTimer, setNewTimer] = useState({
         work: 25,
         short: 5,
@@ -46,24 +46,34 @@ const SetPomodoro = ({ }) => {
         <div className="form-container">
             <form noValidate>
                 <div className='input-wrapper'>
-                    <input
-                        type="text"
-                        className='input'
-                        name='work'
-                        onChange={handleChange}
-                        value={newTimer.work} />
-                    <input
-                        type="text"
-                        className='input'
-                        name='shortBreak'
-                        onChange={handleChange}
-                        value={newTimer.short} />
-                    <input
-                        type="text"
-                        className='input'
-                        name='longBreak'
-                        onChange={handleChange}
-                        value={newTimer.long} />
+                    <div className='input-div'>
+                        <label htmlFor="work">Work</label>
+                        <input
+                            id='work'
+                            type="text"
+                            className='input'
+                            name='work'
+                            onChange={handleChange}
+                            value={newTimer.work} />
+                    </div>
+                    <div className='input-div'>
+                        <label htmlFor="work">Short</label>
+                        <input
+                            type="text"
+                            className='input'
+                            name='shortBreak'
+                            onChange={handleChange}
+                            value={newTimer.short} />
+                    </div>
+                    <div className='input-div'>
+                        <label htmlFor="work">Long</label>
+                        <input
+                            type="text"
+                            className='input'
+                            name='longBreak'
+                            onChange={handleChange}
+                            value={newTimer.long} />
+                    </div>
                 </div>
                 <Button
                     title="Set Timer"
