@@ -50,7 +50,7 @@ const SetPomodoro = ({ }) => {
                         <label htmlFor="work">Work</label>
                         <input
                             id='work'
-                            type="text"
+                            type='number'
                             className='input'
                             name='work'
                             onChange={handleChange}
@@ -59,7 +59,7 @@ const SetPomodoro = ({ }) => {
                     <div className='input-div'>
                         <label htmlFor="work">Short</label>
                         <input
-                            type="text"
+                            type='number'
                             className='input'
                             name='shortBreak'
                             onChange={handleChange}
@@ -68,7 +68,7 @@ const SetPomodoro = ({ }) => {
                     <div className='input-div'>
                         <label htmlFor="work">Long</label>
                         <input
-                            type="text"
+                            type='number'
                             className='input'
                             name='longBreak'
                             onChange={handleChange}
